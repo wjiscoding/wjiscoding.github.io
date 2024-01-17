@@ -1,0 +1,28 @@
+body,h1,h5 {
+    font-family: "Raleway", sans-serif
+}
+body, html {
+    height: 100%
+}
+.bgimg {
+    width: 100%;
+    height: 100%;
+    background-image: url('dogecoin.jpeg');
+    background-position: center;
+    background-size: cover;
+}
+.logo {
+    color: palevioletred;
+    font-weight: bold;
+    font-family: "Raleway", sans-serif;
+}
+.side-nav-bar {
+    width: 200px;
+    height: 50%;
+    padding-top: 2%;
+    display: flex;
+    flex-direction: column;
+}
+.side-nav-bar button {
+    margin: 10px;
+}
