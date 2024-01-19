@@ -27,9 +27,4 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Yamllint
-        uses: karancode/yamllint-github-action@master
-        with:
-          yamllint_file_or_dir: 'metadata.yaml'
-          yamllint_strict: false
-          yamllint_comment: true
-          yamllint_config_datapath: '{extends: relaxed, rules: {line-length: {max: 120}}}' 
+        run: yamllint metadata.yaml
