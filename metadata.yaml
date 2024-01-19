@@ -1,36 +1,41 @@
-# This is a basic workflow to help you get started with Actions
-
-name: CI
-
-# Controls when the workflow will run
-on:
-  # Triggers the workflow on push or pull request events but only for the "main" branch
-  push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
-
-  # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch:
-
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
-jobs:
-  # This workflow contains a single job called "build"
-  build:
-    # The type of runner that the job will run on
-    runs-on: ubuntu-latest
-
-    # Steps represent a sequence of tasks that will be executed as part of the job
-    steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v3
-
-      # Runs a single command using the runners shell
-      - name: Run a one-line script
-        run: echo Hello, world!
-
-      # Runs a set of commands using the runners shell
-      - name: Run a multi-line script
-        run: |
-          echo Add other actions to build,
-          echo test, and deploy your project.
+homepage: "https://ads.tiktok.com/help/article/get-started-google-tag-manager"
+documentation: "https://ads.tiktok.com/help/article/get-started-google-tag-manager"
+versions:
+   - sha: 078f5d7f808bb5cd7a24b5c4fa7c4adc2f7dcc8c
+     changeNotes:
+      Version 0.1.23
+      Make pixel_code optional
+   - sha: 2015f9157664bb8ed0dfe415519a76d3839ad55d
+     changeNotes:
+      Version 0.1.22
+      Add Additional Object Properties
+   - sha: 9e3946854fc4dc9d3e2b3cab526c1981a280dd93
+     changeNotes:
+      Version 0.1.21
+      Add optional currency field to replace currency in ecommerce datalayer
+   - sha: 4ed8cbc2e957c7a9dd702d82045b21391351a3a9
+     changeNotes:
+      Version 0.1.20
+      Improve integration with Enhanced and Standard Ecommerce, UI fixes
+   - sha: 79ef3f657fbdb0edf4e6bfa1419a28e62d4c34d0
+     changeNotes:
+      Version 0.1.19
+      Add brand, category, and config hash.
+   - sha: 45f63e1a80c640547c45f6a93d5ec0c832224698
+     changeNotes:
+      Version 0.1.18
+      Pass through contents.
+   - sha: 2fdc03a9a66c87f31bbf03cbb74f9750f3116f41
+     changeNotes:
+      Update description.
+   - sha: a599315b23c82378879fd77eb96c063367d8d2ea
+     changeNotes:
+      Update name.
+   - sha: 56f6a0cee4d16192063e8a585b5ac9a0b1877661
+     changeNotes:
+      Version 0.1.17
+      Minor bug fixes.
+   - sha: 7fb06ff8b0d246cf1619760aa9e4edfee6deba1b
+     changeNotes:
+      Version 0.1.16
+      Initial release, includes support for Standard and Enhanced Ecommerce.
